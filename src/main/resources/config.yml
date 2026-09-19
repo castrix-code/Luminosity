@@ -1,0 +1,20 @@
+# Block that a Charged Core must be right-clicked against to open the Revival Ritual.
+altar-block: BEACON
+
+# How often player records are flushed to players.yml, in minutes.
+autosave-minutes: 5
+
+# Void path combat balance. Every value is a fraction between 0 and 1.
+# Restart the server after changing these.
+void-path:
+  # Stage 2 Executioner: extra melee damage against Light-path players. 0.08 = +8%.
+  executioner-bonus: 0.08
+
+  # Stage 3 Phase Strike: share of the target's armour points and Resistance ignored.
+  # Armour is non-linear, so this is not "+X% damage". Against full netherite a sword
+  # hit gains roughly: 0.10 -> +30%, 0.15 -> +45%, 0.20 -> +61%, 0.25 -> +76%.
+  # Protection enchantments, absorption hearts and shields are never pierced.
+  phase-strike-armor-pierce: 0.15
+
+  # Stage 1 Vampirism: share of melee damage dealt that heals you, at night or in caves.
+  vampirism-heal: 0.25

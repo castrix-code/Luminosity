@@ -1,0 +1,5 @@
+# Keep shell scripts runnable when cloned onto Linux (e.g. the server VM).
+*.sh text eol=lf
+gradlew text eol=lf
+*.bat text eol=crlf
+*.jar binary
